@@ -2,4 +2,3 @@
 
 
 #python jupyter
-#파이썬 뿌셔뿌셔
