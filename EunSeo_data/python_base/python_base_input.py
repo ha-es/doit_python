@@ -9,12 +9,12 @@ import sys
 # print ("python", "java", file=sys.stderr)   # 표준 에러 / 필요 시 따로 에러처리 가능
 
 # 시험 성적
-# scores = {"수학" :0, "영어":50, "코딩":100}
-# for sub, score in scores.items():
+scores = {"수학" :0, "영어":50, "코딩":100}
+for sub, score in scores.items():
 #     #print(sub, score)
 #     # ljust -> n칸의 공간 확보 후 왼쪽 정렬
 #     # rjust -> n칸의 공간 확보 후 오른쪽 정렬
-#     print(sub.ljust(8), str(score).rjust(4), sep=":")
+    print(sub.ljust(8), str(score).rjust(4), sep=":")
 
 
 # 은행 대기순번표
@@ -25,6 +25,6 @@ import sys
 #     print("대기번호 : " + str(num).zfill(3))
 
 
-answer = input("값을 입력하세요  : ") 
-print(type(answer)) # input()은 항상 문자열로 저장!
-print("입력하신 값은 " +answer + "입니다.")
+# answer = input("값을 입력하세요  : ") 
+# print(type(answer)) # input()은 항상 문자열로 저장!
+# print("입력하신 값은 " +answer + "입니다.")
