@@ -1,12 +1,11 @@
-# 직접 에러 발생 가능
+# 예외처리 구문에서 정상적으로 실행 되던, 아니던 무조건 실행
+
 class BigNumberError(Exception):
     def __init__(self, msg) :
         self.msg = msg
         
     def __str__(self):
         return self.msg
-
-# 의도적으로 에러 발생
 
 try :
     print("한 자리 숫자 나누기 전용 계산기 입니다.")
@@ -28,3 +27,7 @@ except ValueError:
 except BigNumberError as err:
     print("에러가 발생하였습니다. 한 자리 숫자만 입력하세요.")
     print(err)
+    
+    
+finally:
+    print("계산기를 이용해 주셔서 감사합니다.")
